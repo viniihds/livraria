@@ -6,7 +6,7 @@ from rest_framework_simplejwt.views import (
 )
 from rest_framework.routers import DefaultRouter
 
-from livraria.views import CategoriaViewSet, EditoraViewSet, AutorViewSet, LivroViewSet
+from livraria.views.livro import CategoriaViewSet, EditoraViewSet, AutorViewSet, LivroViewSet
 
 router = DefaultRouter()
 router.register(r"categorias", CategoriaViewSet)
