@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'corsheaders',
     'rest_framework',
     'rest_framework_simplejwt',
+    'usuario',
     'livraria',
 ]
 
@@ -85,6 +86,7 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = "usuario.Usuario"
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
