@@ -1,3 +1,4 @@
+import os
 """
 Django settings for config project.
 
@@ -41,6 +42,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'usuario',
+    'uploader',
     'livraria',
 ]
 
@@ -72,6 +74,11 @@ TEMPLATES = [
         },
     },
 ]
+
+MEDIA_URL = "http://localhost:8000/api/media/"
+MEDIA_ENDPOINT = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, "media/")
+FILE_UPLOAD_PERMISSIONS = 0o640
 
 WSGI_APPLICATION = 'config.wsgi.application'
 
