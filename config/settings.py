@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "usuario",
     "uploader",
     "livraria",
+    "django_extensions",
 ]
 
 MIDDLEWARE = [
